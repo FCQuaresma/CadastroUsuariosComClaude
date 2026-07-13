@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\UserManagementApi.Services\UserManagementApi.Services.csproj" />
+    <ProjectReference Include="..\UserManagementApi.Domain\UserManagementApi.Domain.csproj" />
+    <ProjectReference Include="..\UserManagementApi.CrossCutting\UserManagementApi.CrossCutting.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

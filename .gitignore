@@ -1,0 +1,12 @@
+# .NET
+bin/
+obj/
+*.user
+.vs/
+
+# Angular (raiz cobre subpasta também, mas o .gitignore dela já trata)
+AprendendoClaudeAngular/node_modules/
+AprendendoClaudeAngular/dist/
+
+# Env / segredos locais
+.env

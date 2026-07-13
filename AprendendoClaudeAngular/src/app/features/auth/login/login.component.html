@@ -1,0 +1,18 @@
+<div class="flex align-items-center justify-content-center min-h-screen bg-neutral-100">
+    <div class="surface-card p-4 shadow-2 border-round w-full lg:w-4 max-w-30rem">
+        <div class="text-center mb-5">
+            <div class="text-900 text-3xl font-medium mb-3">Bem-vindo</div>
+        </div>
+        <div>
+            <input type="text" placeholder="E-mail" [(ngModel)]="email" name="email"
+                   class="w-full p-3 border-1 border-solid surface-border border-round mb-4">
+            <input type="password" placeholder="Senha" [(ngModel)]="senha" name="senha"
+                   class="w-full p-3 border-1 border-solid surface-border border-round mb-4">
+            <p class="text-red-500 mb-3" *ngIf="mensagemErro">{{ mensagemErro }}</p>
+            <button type="button" (click)="entrar()" [disabled]="carregando"
+                    class="w-full p-3 text-white bg-blue-500 border-none border-round">
+                {{ carregando ? 'Entrando...' : 'Entrar' }}
+            </button>
+        </div>
+    </div>
+</div>

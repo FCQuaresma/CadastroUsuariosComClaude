@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="UserManagementApi.Api/UserManagementApi.Api.csproj" DefaultStartup="true" />
+  <Project Path="UserManagementApi.Application/UserManagementApi.Application.csproj" />
+  <Project Path="UserManagementApi.CrossCutting/UserManagementApi.CrossCutting.csproj" />
+  <Project Path="UserManagementApi.Data/UserManagementApi.Data.csproj" />
+  <Project Path="UserManagementApi.Domain/UserManagementApi.Domain.csproj" />
+  <Project Path="UserManagementApi.Services/UserManagementApi.Services.csproj" />
+</Solution>

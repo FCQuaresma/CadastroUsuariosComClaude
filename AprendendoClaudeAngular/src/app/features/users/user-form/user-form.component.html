@@ -1,0 +1,32 @@
+<div class="min-h-screen bg-neutral-100 p-4 flex justify-content-center">
+  <div class="surface-card p-4 shadow-2 border-round w-full lg:w-4 max-w-30rem">
+    <div class="text-900 text-2xl font-medium mb-4">{{ modoEdicao ? 'Editar usuário' : 'Novo usuário' }}</div>
+
+    <div class="flex flex-column gap-3">
+      <div>
+        <label class="block mb-2 text-600">Nome</label>
+        <input type="text" pInputText class="w-full" [(ngModel)]="nome" name="nome" />
+      </div>
+
+      <div>
+        <label class="block mb-2 text-600">Email</label>
+        <input type="text" pInputText class="w-full" [(ngModel)]="email" name="email" />
+      </div>
+
+      <div *ngIf="!modoEdicao">
+        <label class="block mb-2 text-600">Senha</label>
+        <p-password [(ngModel)]="senha" name="senha" [feedback]="false" [toggleMask]="true" styleClass="w-full" inputStyleClass="w-full"></p-password>
+      </div>
+
+      <div>
+        <label class="block mb-2 text-600">Role</label>
+        <p-dropdown [options]="roles" [(ngModel)]="role" name="role" optionLabel="label" optionValue="value" styleClass="w-full"></p-dropdown>
+      </div>
+
+      <div class="flex justify-content-end gap-2 mt-3">
+        <button pButton type="button" label="Cancelar" class="p-button-text" routerLink="/users"></button>
+        <button pButton type="button" label="Salvar" [loading]="salvando" (click)="salvar()"></button>
+      </div>
+    </div>
+  </div>
+</div>

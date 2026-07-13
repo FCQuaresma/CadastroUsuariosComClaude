@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>d94ae38c-ef9e-4936-ae0b-913df2a26bd4</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.28" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UserManagementApi.Application\UserManagementApi.Application.csproj" />
+    <ProjectReference Include="..\UserManagementApi.Services\UserManagementApi.Services.csproj" />
+    <ProjectReference Include="..\UserManagementApi.Data\UserManagementApi.Data.csproj" />
+    <ProjectReference Include="..\UserManagementApi.CrossCutting\UserManagementApi.CrossCutting.csproj" />
+  </ItemGroup>
+
+</Project>
